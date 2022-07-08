@@ -16,7 +16,7 @@ Use 2.2 or lower
 
 1\. Composer require
 
-    $ composer require cethyworks/google-place-autocomplete-bundle
+    $ composer require muzhkevych/google-place-autocomplete-bundle
 
 2\. Register bundles
 
