@@ -3,6 +3,7 @@
 namespace Cethyworks\GooglePlaceAutocompleteBundle\Command;
 
 use Cethyworks\ContentInjectorBundle\Command\TwigCommand;
+use Twig\Environment as TwigEnvironment;
 use Twig_Environment;
 
 class GooglePlaceAutocompleteLibraryCommand extends TwigCommand
@@ -12,10 +13,10 @@ class GooglePlaceAutocompleteLibraryCommand extends TwigCommand
     /**
      * GooglePlaceAutocompleteLibraryCommand constructor.
      *
-     * @param Twig_Environment $twig
+     * @param TwigEnvironment $twig
      * @param string $apiKey
      */
-    public function __construct(Twig_Environment $twig, $apiKey)
+    public function __construct(TwigEnvironment $twig, $apiKey)
     {
         parent::__construct($twig);
         $this->setGoogleApiKey($apiKey);
