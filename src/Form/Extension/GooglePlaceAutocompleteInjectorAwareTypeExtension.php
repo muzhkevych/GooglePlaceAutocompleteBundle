@@ -39,6 +39,16 @@ class GooglePlaceAutocompleteInjectorAwareTypeExtension extends AbstractTypeExte
     }
 
     /**
+     * Gets the extended types - not implementing it is deprecated since Symfony 4.2.
+     *
+     * @return array The name of the type being extended
+     */
+    public static function getExtendedTypes(): iterable
+    {
+        return [FormType::class];
+    }
+    
+    /**
      * Update injector options
      *
      * @param OptionsResolver $resolver
