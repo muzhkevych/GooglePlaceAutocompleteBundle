@@ -10,7 +10,7 @@ class GooglePlaceAutocompleteBundleExtension extends AbstractExtension
 {
     private $twigLoader;
 
-    public function __construct(\Twig_Loader_Filesystem $twigLoader)
+    public function __construct(\Twig\Loader\FilesystemLoader $twigLoader)
     {
         $this->twigLoader = $twigLoader;
 
